@@ -6,7 +6,7 @@ import { PAGES_ROUTES } from './pages.routes';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
-
+//Componentes
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
@@ -16,6 +16,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -25,14 +27,17 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [ 
         CommonModule,
         SharedModule,
         PAGES_ROUTES, 
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        
      ],
     exports: [
         DashboardComponent,
